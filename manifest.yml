@@ -1,0 +1,9 @@
+---
+applications:
+- name:	mysql
+  memory: 256M
+  instances: 1
+  host: mysql-${random-word}
+  buildpack: php_buildpack
+  services:
+  - mySql
